@@ -16,9 +16,7 @@ body{
 /* ------------------------------------home-section-------------------- */
 .wrapper{
     width:100%;
-    /* height: 70vh; */
-    /* background: url("https://png.pngtree.com/background/20230614/original/pngtree-circle-of-people-sitting-with-flowers-in-a-circle-picture-image_3528362.jpg"); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(Images/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(images/bg.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -61,7 +59,6 @@ body{
     font-size: 105px;
     letter-spacing: 9px;
     font-weight: 800;
-    /* color: #27a823; */
 }
 .onam-o span{
     color: #f15353;
