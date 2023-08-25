@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+}
+/* ------------------------------------home-section-------------------- */
+.wrapper{
+    width:100%;
+    /* height: 70vh; */
+    /* background: url("https://png.pngtree.com/background/20230614/original/pngtree-circle-of-people-sitting-with-flowers-in-a-circle-picture-image_3528362.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(Images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 20px 20px 20px;
+    color: #f3ebeb;
+    justify-content: space-around;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.heading h1{
+    font-size:65px;
+    letter-spacing: 8px;
+}
+.heading .place{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+.main-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.info{
+    line-height: 8px;
+    font-size: 25px;
+}
+.onam-o{
+    margin-top: -10px;
+    font-size: 105px;
+    letter-spacing: 9px;
+    font-weight: 800;
+    /* color: #27a823; */
+}
+.onam-o span{
+    color: #f15353;
+}
+.date{
+    margin-top: 16px;
+    font-size: 24px;
+}
+.quote{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
+.intro{
+    margin-top: 12px;
+    font-weight: 400;
+}
+/* -----------------Program section--------------------- */
+.features{
+    width: 100%;
+    background: url(images/greybg.jpg);
+    background-size: cover;
+    padding: 15px 6.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-head{
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.sub-head{
+    font-size: 20px;
+    font-weight: 600;
+    color:#f15353;
+    margin-top: -10px;
+}
+.programmes{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* column-gap: 3pt 3pt; */
+    flex-wrap: wrap;
+    gap: 20px;
+    /* background: yellow; */
+    margin-bottom: 20px;
+}
+.card{
+    max-width: 350px;
+    width: 350px;
+    /* background: aqua; */
+    padding: 5px;
+    text-align: center;
+    transition: 0.4s ease-out;
+}
+.pg-img{
+    width: 100%;
+    height: 190px;
+    border-radius: 5px;
+}
+.card:hover{
+    background: #ccc;
+}
+/* .card:hover .pg-img{
+    transform: scale(10px,10px ,10px);
+} */
+.history, .des-part, .gallery-sec{
+    width: 100%;
+    padding: 15px 6.6% 40px 6.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.story, .description{
+    /* width: 1090px; */
+    margin-top: 30px;
+    line-height: 30px;
+    text-align: justify;
+    /* background: palegreen; */
+}
+.des-part, .history{
+    padding: 15px 6.6% 20px 6.6%;
+}
+.gallery-sec{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)) , url(images/bg3.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.read-more{
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #f3ebeb;
+    background: #f15353;
+    text-decoration: none;
+    margin-top: 15px; 
+    border-radius: 3px;
+}
+
+footer{
+    width: 100%; 
+    padding: 30px 6% 10px 6%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: #333332;
+    align-items: center;
+    justify-content: center;
+}
+.follow{
+    text-align: center;
+    width: 100%;
+}
+.footer-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.follow-icons{
+    margin-top: 10px;
+}
+.follow-icons a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.follow-icons a i{
+    color: #fff;
+    font-size: 25px;
+} 
+.follow-icons a:hover i{
+    color: #f15353  ;
+}
+.policy{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 10px 0px 10px;
+}
+.gallery{
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-auto-rows: 220px;
+    grid-auto-flow: dense;
+}
+.gallery .wide{
+    grid-column: span 2;
+}
+.gallery .tall{
+    grid-row: span 2;
+}
+.gallery .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.gallery img{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    display: inline-block;
+}
+.gallery div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition:  0.3s ease;
+}
+.gallery div span{
+    border-radius: 8px ;
+    transition: top 0.5s ;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    font-size: 22px;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: #f3ebeb;
+}
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: inline-block;
+}
+.gallery div img:hover{
+    cursor: pointer;
+}
+.gallery div:hover span{
+    top: 0;
+    transition: color 0.5s;
+}
+.box-arrow{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: #f3ebeb;
+    background: #f15353;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+
+
+
+@media(max-height:520px) {
+    .heading{
+        margin-bottom: 20px;
+    }
+    .heading h1{
+        font-size:60px;
+    }
+    .heading .place{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .date{
+        margin-top: 7px;
+    }
+}
+@media(max-width:1190px) {
+    .card{
+        width: 300px;
+    }
+}
+@media(max-width:1135px) {
+    .heading{
+        margin-bottom: 20px;
+    }
+    .heading h1{
+        font-size:60px;
+    }
+    .heading .place{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .date{
+        margin-top: 0px;
+    }
+    .onam-o{
+        font-size: 95px;
+    }
+    .info{
+        font-size: 20px;
+    }
+    .quote{
+        margin-top: 14px;
+        font-size: 17px;
+    }
+    .intro{
+        margin-top: 10px;
+    }
+    .gallery{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+        grid-auto-rows: 220px;
+    }
+}
+@media(max-width:890px) {
+    .wrapper{
+        padding: 8px 20px 10px 20px;
+    }
+    .heading{
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .heading h1{
+        font-size:50px;
+        letter-spacing: 6px;
+    }
+    .heading .place{
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+}
+@media(max-width:870px) {
+    .onam-o{
+        font-size: 85px;
+    }
+    .date{
+        font-size: 20px;
+    }
+}
+@media(max-width:780px) {
+    .quote{
+        width: 80%;
+        font-size: 13px;
+    }
+}
+@media(max-width:700px) {
+    .history, .des-part, .gallery-sec{
+        padding: 15px 8% 20px 8%;
+    }
+}
+@media(max-width:609px) {
+    .gallery{
+        width: 60%;
+    }
+}
+@media(max-width: 500px) {
+    .gallery{
+        width: 100%;
+    }
+}
+@media(max-width:460px) {
+    .features .main-head{
+        text-align: center;
+        line-height: 38px;
+    }
+    .features .sub-head{
+        text-align: center;
+    }
+}
+@media(max-width:415px) {
+    .quote{
+        width: 90%;
+
+    }
+}
+@media(max-width:356px) {
+    .history .main-head{
+        text-align: center;
+        line-height: 38px;
+    }
+    .history .sub-head{
+        text-align: center;
+    }
+}
